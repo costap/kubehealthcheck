@@ -1,0 +1,20 @@
+# permissions to do viewer serviceinfoes.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: serviceinfo-viewer-role
+rules:
+- apiGroups:
+  - healthcheck.khc.io
+  resources:
+  - serviceinfoes
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - healthcheck.khc.io
+  resources:
+  - serviceinfoes/status
+  verbs:
+  - get

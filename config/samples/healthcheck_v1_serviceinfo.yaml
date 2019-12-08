@@ -1,0 +1,7 @@
+apiVersion: healthcheck.costap.io/v1
+kind: ServiceInfo
+metadata:
+  name: serviceinfo-sample
+spec:
+  # Add fields here
+  selector: bar
